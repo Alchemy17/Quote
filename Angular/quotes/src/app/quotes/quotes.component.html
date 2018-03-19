@@ -8,14 +8,18 @@
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
     <div class="bordr col-md-6">
-      <div *ngFor="let quote of quotes;let i = 'index'">
-        <div class="row">
-          <h4 id="{{i}}" appStrikethrough>{{quote.completeDate|date}} <br> -{{quote.name}}</h4>
+      <div class="card" *ngFor="let quote of quotes;let i = 'index'">
+        <div class="card-header">
+          Quote
         </div>
-        <button class="btn btn-primary " (click)='toogleDetails(i)'>Toggle Details</button>
-        <div class="row" *ngIf="quote.showDescription">
+        <div class="card-body row">
+          <h4 class="card-title" id="{{i}}" appStrikethrough>-{{quote.name}}</h4>
+        </div>
+        {{quote.completeDate|date}}
+        <div *ngIf="quote.showDescription">
           <app-quote-content [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-content>
         </div>
+        <button class="btn btn-primary " (click)='toogleDetails(i)'>Toggle Details</button>
       </div>
     </div>
   </div>
