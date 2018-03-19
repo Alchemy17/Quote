@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<p>{{quote.description}}</p>
+<p>It has been {{quote.completeDate|dateCount}} days since posted</p>
+<button type="button" class="btn btn-default btn-sm">
+  <span class="glyphicon glyphicon-thumbs-up"></span> Upvote
+</button>
+<button type="button" class="btn btn-default btn-sm">
+  <span class="glyphicon glyphicon-thumbs-down"></span> Downvote
+</button>
+<button class="btn btn-danger btn-sm" (click) = 'quoteDelete(true)'> Delete Quote </button>
