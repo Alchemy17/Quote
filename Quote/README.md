@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
+## By Abdulrahman Mohamed
+
+### Description
+This project is for inputting quotes and listing them so that other people may read and tell whether they like it or not. If they like it, they get to upvote it else, they can downvote
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
