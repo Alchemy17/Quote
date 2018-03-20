@@ -8,7 +8,7 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-    new Quote(1, 'Albert Einstein', "Everyone is born a Genius, But if you judge a fish by it's ability to climb a tree, it will live it's whole life believing it's stupid", new Date(2018, 3, 14)),
+    new Quote(1, 'Albert Einstein', "Everyone is born a Genius, But if you judge a fish by it's ability to climb a tree, it will live it's whole life believing it's stupid", "maano", new Date(2018, 3, 14)),
   ]
 
   toogleDetails(index) {

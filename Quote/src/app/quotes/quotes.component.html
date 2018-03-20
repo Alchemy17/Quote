@@ -19,6 +19,9 @@
         <div *ngIf="quote.showDescription">
           <app-quote-content [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-content>
         </div>
+        <div class="card-footer">
+        <em> Submitted by {{quote.submit}}</em>
+        </div>
         <button class="btn btn-primary " (click)='toogleDetails(i)'>Toggle Details</button>
       </div>
     </div>
